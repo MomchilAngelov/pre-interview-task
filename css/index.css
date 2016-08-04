@@ -1,0 +1,25 @@
+.item {
+	width: 80%;
+	margin: 10px 10%;
+	background-color: #BCA3A3;
+	display: inline-block;
+	height: 200px;
+	padding: 20px;
+}
+
+.item img {
+	float: right;
+	height: 100%;
+}
+
+.name {
+
+}
+
+.description {
+
+}
+
+.price {
+
+}
