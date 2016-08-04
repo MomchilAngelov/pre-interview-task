@@ -33,11 +33,11 @@ $(document).ready(function(){
 
 
 		var name_paragraph = $("<p />");
-		name_paragraph.text(name);
+		name_paragraph.text("Име на продукта: " + name);
 		name_paragraph.addClass("name");
 
 		var price_paragraph = $("<p />");
-		price_paragraph.text(price);
+		price_paragraph.text("Цена на продукта: " + price);
 		price_paragraph.addClass("price");
 
 		var quantity = $("<p />");
