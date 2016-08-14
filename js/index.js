@@ -141,7 +141,15 @@ $(document).ready(function(){
 			all_data[i] = data;
 		});
 		all_data['total'] = get_current_bill();
-		console.log(all_data);
+		
+		/*
+		total = all_data['total'];
+		console.log("The total amount is: " + total + "\nTime for processing the individual products...");
+		delete all_data['total'];
+		for (var obj in all_data){
+			console.log(all_data[obj]);
+		}
+		*/
 
 		var createPromise = $.ajax({
 			url: "http://example.org/",
@@ -179,7 +187,7 @@ $(document).ready(function(){
 			if (nothing_selected()){
 				alert("Your shopping basket is empty!");
 			} else if (too_much_of_sort()){
-				var item= get_shortage_item();
+				var item = get_shortage_item();
 				alert("Тhe selected quantity for product "+item+" is out of stock");
 			} else {
 				make_ajax();
